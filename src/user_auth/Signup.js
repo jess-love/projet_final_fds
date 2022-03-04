@@ -50,3 +50,5 @@ import  CheckBoxIcon  from '@mui/icons-material/CheckBox';
         </div>
     )
 }
+
+//Prochaine tache: centrer la page

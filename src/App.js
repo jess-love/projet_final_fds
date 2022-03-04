@@ -23,3 +23,4 @@ function App() {
 }
 
 export default App;
+//Prochaine tache: centrer la page login et signup
