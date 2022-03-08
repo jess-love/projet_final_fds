@@ -11,17 +11,18 @@ import PersonIcon from '@mui/icons-material/Person';
 
 const Login=()=>{
     return(
-        <div> 
+        <div > 
             <div className='icon'>
-                <div className='icon_class'> </div>
-                <PersonIcon fontsize='large' />
+                <div className='icon_class'> 
+                    <PersonIcon fontsize='large' />
+                </div>
                 <div className='text'>Log in</div>
 
             </div>
 
           
 
-            <div className='row m-2'>
+            <div className='row-m-2'>
                 <TextField id='email' className='p-2' type='text' variant='outlined' label= 'Enter Email' fullWidth />
                 <TextField id='password' className='p-2' type='text' variant='outlined' label= 'Enter Password' fullWidth />
                 <FormControlLabel 
@@ -34,14 +35,17 @@ const Login=()=>{
                     }
                     label='Remember me'
                 />
-                <Button variant='contained' color='primary' >Log in</Button>
+                <Button className='btn' variant='contained' color='success'>Log in</Button>
+
+                
+                <p className='text-center'>
+                    <Divider variant='middle'/>
+                    <Link to='\signup' className='create-account'>
+                        <h5>Create Account</h5>
+                    </Link>
+                </p>
             </div>
-            <Divider variant='middle'/>
-            <p className='text-center'>
-                <Link to='\signup' className='text-back-50'>
-                    <h5>Create Account</h5> 
-                </Link>
-            </p>
+   
 
         </div>
     )
