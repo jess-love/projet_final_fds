@@ -1,22 +1,31 @@
 import "./App.css";
-import Login from './user_auth/Login';
-// import {Signup} from './../user_auth/Signup';
-import {Signup} from './../src/user_auth/Signup';
-import {Route, Switch} from 'react-router-dom';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import Container from '@material-ui/core/Container';
+import {SideMenu} from './components/SideMenu';
+import {route} from './routes';
 
 function App() {
   return(
     
     <>
-    <Container maxWidth='md'>
-    <div className="App">
-      <Switch>
-        <Route path="/signup" exact component={Signup}/>
-        <Route path="/login" exact component={Login}/>
-      </Switch>
-    </div>
-    </Container>
+    <SideMenu />
+<Container >
+  <div className="App">
+    
+      <Switch>  
+          {
+            route.map((men) => 
+             {
+               return <Route exact path={men.path} component={men.component}/>
+             }
+            )
+          }      
+        <Redirect to="/" />
+
+      </Switch> 
+      
+  </div>
+</Container>
     </>
 
   );

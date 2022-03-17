@@ -6,19 +6,8 @@ import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import Checkbox from '@mui/material/Checkbox';
 import  CheckBoxIcon  from '@mui/icons-material/CheckBox';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
-// import { createMuiTheme } from 'material-ui/styles';
 
-// const theme = createMuiTheme({
-//     palette: {
-//       primary: {
-//         main: "#46AD8D",
-//         contrastText: "#fff" //button text white instead of black
-//       },
-//       background: {
-//         default: "#394764"
-//       }
-//     }
-//   });
+
  export const Signup=()=>{
     return(
         <div > 

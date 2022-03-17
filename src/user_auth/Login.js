@@ -9,7 +9,7 @@ import PersonIcon from '@mui/icons-material/Person';
 
 
 
-const Login=()=>{
+export const Login=()=>{
     return(
         <div > 
             <div className='icon'>
@@ -50,6 +50,3 @@ const Login=()=>{
         </div>
     )
 }
-export default Login;
-
-//Prochaine tache: centrer la page
