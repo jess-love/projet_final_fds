@@ -1,7 +1,7 @@
 import React from 'react';
 import './../App.css';
 import {Link} from 'react-router-dom'
-import { Button, Divider, FormControlLabel, TextField } from '@mui/material';
+import { Divider, FormControlLabel, TextField } from '@mui/material';
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import Checkbox from '@mui/material/Checkbox';
 import  CheckBoxIcon  from '@mui/icons-material/CheckBox';
@@ -43,7 +43,7 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
                     }
                     label='I agree to all Terms & Conditions'
                 />
-                <Button className='btn' variant='contained' color='success'>Create Account</Button>
+                <button className='btn' variant='contained'>Create Account</button>
                 
                 <p className='text-center'>
                      <Divider variant='middle'/>

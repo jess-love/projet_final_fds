@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import { Button, Divider, FormControlLabel, TextField } from '@mui/material';
+import {  Divider, FormControlLabel, TextField } from '@mui/material';
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import Checkbox from '@mui/material/Checkbox';
 import  CheckBoxIcon  from '@mui/icons-material/CheckBox';
@@ -35,7 +35,7 @@ export const Login=()=>{
                     }
                     label='Remember me'
                 />
-                <Button className='btn' variant='contained' color='success'>Log in</Button>
+                <button className='btn' variant='contained' >Log in</button>
 
                 
                 <p className='text-center'>
@@ -45,7 +45,7 @@ export const Login=()=>{
                     </Link>
                 </p>
             </div>
-   
+            {/* color='success' */}
 
         </div>
     )
