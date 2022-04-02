@@ -1,6 +1,6 @@
 /* This section is reserved to back of all pages */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,7 @@ ul {
 body {
   background-color: #eee;
   font-family: "Open Sans", sans-serif;
-}
+} */
 /* This section is reserved to back of all pages */
 
 /* ******************************************************** */
@@ -129,6 +129,9 @@ body {
   box-sizing: border-box;
   padding-left: 30px;
   cursor: pointer;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in;
 }
 
 .side-menu .main-menu .sub-menu a {
@@ -137,6 +140,10 @@ body {
   margin: 5px 0;
   font-size: 15px;
   font-weight: 600;
+}
+
+.side-menu .main-menu .sub-menu.active {
+  max-height: 200px;
 }
 
 .side-menu-footer .user-infos {
@@ -272,3 +279,7 @@ body {
 /* This section is reserved to side bar page */
 
 /* ******************************************************** */
+
+.contents {
+  margin-left: 300px;
+}

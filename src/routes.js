@@ -1,6 +1,7 @@
 import {Login} from './user_auth/Login';
 import {Signup} from './user_auth/Signup';
-import Navigation_bar from './components/Navigation_bar';
+import {Contents} from './components/ComponentSideMenu/Contents';
+import { Games} from './components/ComponentSideMenu/Games';
 
 
 
@@ -19,9 +20,15 @@ export const route=[
         menu:false
       },
       {
-        name:"navigation_bar",
-        path:"/nav_bar",
-        component:Navigation_bar,
+        name:"contents",
+        path:"/contents",
+        component:Contents,
+        menu:false
+      },
+      {
+        name:"games",
+        path:"/games",
+        component:Games,
         menu:false
       },
   
