@@ -18,6 +18,11 @@ a {
   color: rgb(204, 204, 204);
 }
 
+.nav__link:hover{
+  text-decoration: none;
+  color: ghostwhite;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -25,7 +30,7 @@ a {
   height: 8vh;
   background: rgb(0, 0, 0);
 }
-.nav__brand {
+.nav__brand{
   text-transform: uppercase;
 }
 
@@ -68,7 +73,7 @@ a {
     right: 0;
     width: 50%;
     height: 93vh;
-    background: rgb(57, 57, 59);
+    background: rgb(0, 0, 0);
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;

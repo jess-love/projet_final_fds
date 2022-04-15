@@ -43,14 +43,17 @@ export const Login = () => {
           }
           label="Remember me"
         />
-        <button className="btn" variant="contained">
-          <a href="/">Log in</a>
-        </button>
+
+        <a className="btn_login" href="/">
+          <button className="btn" variant="contained">
+            Log in
+          </button>
+        </a>
 
         <p className="text-center">
           <Divider variant="middle" />
           <Link to="/signup" className="create-account">
-            <h5>Create Account</h5>
+            <h5 className="create_account">Create Account</h5>
           </Link>
         </p>
       </div>

@@ -18,11 +18,24 @@ body {
   background-color: #eee;
   font-family: "Open Sans", sans-serif;
 } */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
 /* This section is reserved to back of all pages */
 
 /* ******************************************************** */
 
 /* This section is reserved to login and signup pages */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .icon {
   display: flex;
@@ -62,20 +75,49 @@ body {
 }
 
 .btn {
-  /* color: #02706b; */
+  color: #02706b;
   background-color: #136d68;
-  border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  width: 500px;
 }
 
-.create-account {
+.btn_login .btn:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.create-account .create_account:hover{
+  text-decoration: none;
   color: #02706b;
 }
+
+.create_account{
+  color: #02706b;
+}
+
+.password-progression .password_txt{
+  text-align : "right" ;
+  font-size: 10px;
+  padding-top: 0%;
+}
+
+.password-progression{
+  padding-top: 6px;
+  padding-bottom: 0px;
+}
+
+.col-6 {
+  padding-top: 0%;
+}
+
+
 
 /* This section is reserved to login and signup pages */
 
@@ -282,4 +324,8 @@ body {
 
 .contents {
   margin-left: 300px;
+}
+@media screen and (max-width: 397px) {
+
+
 }
