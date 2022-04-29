@@ -1,53 +1,56 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
-import "./Navigation.css";
 
-function Navigation() {
-  const [active, setActive] = useState("nav__menu");
-  const [icon, setIcon] = useState("nav__toggler");
-  const navToggle = () => {
-    if (active === "nav__menu") {
-      setActive("nav__menu nav__active");
-    } else setActive("nav__menu");
+import React from "react";
 
-    // Icon Toggler
-    if (icon === "nav__toggler") {
-      setIcon("nav__toggler toggle");
-    } else setIcon("nav__toggler");
-  };
+export const Navigation = () => {
   return (
-    <nav className="nav">
-      <a href="#" className="nav__brand">
-        Shop Online
-      </a>
-      <ul className={active}>
-        <li className="nav__item">
-          <a href="/" className="nav__link">
-            Home
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="/services" className="nav__link">
-            Services
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="/about" className="nav__link">
-            About
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="/login" className="nav__link">
-            Sign in
-          </a>
-        </li>
-      </ul>
-      <div onClick={navToggle} className={icon}>
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
+    <div className="principal">
+      <div className="header-1">
+        <a href="#" className="logo">
+          <i className="fas fa-shopping-bag"></i> shopping
+        </a>
+
+        <div className="form-container">
+          <form action="">
+            <input type="search" placeholder="search products" id="search" />
+            <label for="search" className="fas fa-search"></label>
+          </form>
+        </div>
       </div>
-    </nav>
+
+      <div className="header-2">
+        <div id="menu" className="fas fa-bars"></div>
+
+        <nav className="navbar">
+          <ul>
+            <li>
+              <a className="active" href="#home">
+                home
+              </a>
+            </li>
+            <li>
+              <a href="#arrival">arrival</a>
+            </li>
+            <li>
+              <a href="#featured">featured</a>
+            </li>
+            <li>
+              <a href="#gallery">gallery</a>
+            </li>
+            <li>
+              <a href="#deal">deal</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="icons">
+          <a href="#" className="fas fa-heart"></a>
+          <a href="#" className="fas fa-shopping-cart"></a>
+          <a href="#" className="fas fa-user"></a>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 export default Navigation;

@@ -19,25 +19,25 @@ body {
   font-family: "Open Sans", sans-serif;
 } */
 
-*,
+/* *,
 *::after,
 *::before {
   margin: 0;
   box-sizing: border-box;
-}
+} */
 /* This section is reserved to back of all pages */
 
 /* ******************************************************** */
 
 /* This section is reserved to login and signup pages */
 
-*{
+/* *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
-.icon {
+/* .icon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +115,7 @@ body {
 
 .col-6 {
   padding-top: 0%;
-}
+} */
 
 
 
@@ -125,7 +125,7 @@ body {
 
 /* This section is reserved to side bar page */
 
-.side-menu .user {
+/* .side-menu .user {
   width: 30px;
   height: 30px;
   overflow: hidden;
@@ -316,16 +316,27 @@ body {
   height: 1px;
   border-radius: 1px;
   background: #333;
-}
+} */
 
 /* This section is reserved to side bar page */
 
 /* ******************************************************** */
 
-.contents {
+/* .contents {
   margin-left: 300px;
 }
 @media screen and (max-width: 397px) {
 
 
-}
+} */
+
+
+
+
+
+
+
+
+
+
+/* *********************************************************************************************************************** */
